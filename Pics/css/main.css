@@ -1,0 +1,167 @@
+body
+{
+overflow-x:hidden;
+width:100%;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+background:url(../image/bg.jpg);
+height:auto;
+background-attachment:fixed;
+}
+.bg
+{
+min-height:540px;
+}
+.bg1
+{
+background:url(../image/bg.jpg);
+min-height:535px;
+}
+
+@font-face {
+   font-family: 'typo';
+    src: url('../fonts/typo.ttf');
+	}
+
+@font-face {
+   font-family: 'gothic';
+    src: url('../fonts/gothics.ttf');
+	}
+
+.panel{
+border-color:#eee;
+margin:40px;
+padding:20px;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+}
+
+.title
+{
+font-family:'typo';
+}
+
+.header
+{
+background:#243559;
+height:70px;
+}
+.logo
+{
+font-family:'typo';
+font-size:35px;
+color:#fff; background:#80c32f;
+margin:15px;line-height:70px; padding:12px;
+}
+
+.title1{
+font: 16px "Century Gothic", "Times Roman", sans-serif;
+}
+.title2{
+font-family: 'Ubuntu', sans-serif;
+font-size:20px;
+}
+
+
+.sub1
+{
+width:90px;
+color:#fff;
+background:#80c32f;
+font-size:15px;
+height:40px;
+margin:20px;
+padding:10px;
+width:100px;
+}
+
+
+.sub
+{
+width:100%;
+background-color:#9acd32;
+font-size:20px;
+padding:2px;
+margin-top:15px;
+margin-right:20px;
+}
+.sub:hover
+{
+color:#fff;
+}
+
+.footer
+{
+font-size:15px;
+text-align:center;
+border-top:3px solid #fff;
+background-color:#000;
+}
+.footer a
+{
+margin:25px;
+color:#fff; font-weight:bold;
+text-decoration:none;
+font: 15px "Century Gothic", "Times Roman", sans-serif;
+
+}
+.footer a:hover
+{
+text-decoration:none;
+color:#9acd32;
+
+border-color:#ca3535;
+
+}
+
+.box
+{
+padding:9px;
+}
+hr{
+color:#000000;
+}
+.top
+{
+margin-top:20px;
+}
+.log1
+{
+font: 15px 'Ubuntu', sans-serif;
+color:orange;
+margin-left:10px;
+}
+
+.log
+{
+margin:10px;
+margin-right:60px;
+margin-left:5px;
+color:orange;
+text-decoration:none;
+font-size:20px;
+font-size:15px;
+}
+.log:hover
+{
+color:#9acd32;
+border-top:2px solid;
+border-color:orange;
+text-decoration:none;
+}
+.panel{padding:40px; background:#80c32f; width:93%;
+  }
+h1{color:#fff; font-family:sans-sarif; color:#fff; font-size:50px; font-weight:bold; opacity:none; font-family:'typo';  }
+.links{text-decoration:none; margin-left:20%; padding:0;}
+.links li { width:70%; height:50px; line-height:25px; transition:all 2s; background:#243559; border-left:5px solid #fff; list-style-type:none; padding:15px; margin:10px;}
+.links li a{list-style-type:none; text-decoration:none; color:#fff; font-size:22px;}
+.links li:hover{background:#ca3535; transform:scale(1.2,1.2); }
+
+.question-header
+{
+    
+    border:2px solid #000;
+    color:#000; background:#fff; font-weight:700;
+    }
+.check
+    {
+        color:#fff; font-size:20px; 
+    }

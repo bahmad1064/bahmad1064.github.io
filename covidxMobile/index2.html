@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @font-face {
+  font-family: Fnt;
+  src: url(Kufyan-Arabic-Black.otf);
+
+}
+@font-face {
+  font-family: Fntb;
+  src: url(Kharabeesh-Font.ttf);
+
+}
+   </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/jquery.mobile.css">
+    <link rel="stylesheet" href="css/jqm-demos.css">
+    <link rel="stylesheet" href='css/upload.css'>
+    <script src="js/jquery.js"></script>
+    <script src="js/view.jquerymobile.js"></script>
+    <script src="js/view.jquerymobile1.js"></script>
+
+    <script>
+
+
+
+        $(document).ready(function() {
+
+            $("#loading").hide()
+
+        });
+    </script>
+</head>
+<body>{
+
+    <style>
+        body {
+            background-color: #ca3535;
+        }
+        .header img{
+
+            max-width: 100%; 
+           
+            margin-top: 0;
+            width: 350px;
+        }
+
+    </style>
+
+<!-- Start of first page: #one -->
+<div data-role="page" id="one" style="background-color: #b0e0b8; background-image: url('img/bg7.jpg'); background-repeat: no-repeat;background-position:bottom; background-size: contain;">
+
+
+    <div role="main" class="ui-content" style='margin-bottom:70%; background-color: #b0e0b8'>
+
+        <div class="header"> <img src="img/logo1.png"> </div>
+
+        <img src="img/logo.png" id='logo' style="max-width: 100%; */
+    /* max-height: 50%; */
+    border-radius: 5px;
+    height: 150px;
+    min-width: 100%;">
+        <!-- <form method="POST" enctype="multipart/form-data" action="https://alsunaydi.pythonanywhere.com/" id="myform"> -->
+            <form method="POST" enctype="multipart/form-data" action="http://127.0.0.1:5000/" id="myform">
+
+
+                
+            <label style="text-align: center; font-weight: bold;font-family: Fnt;">X-Ray Image Upload</label><br>
+			<div class="fileinput-button" data-role="button"  style="margin-left:31%;width: 35% ;background: #3dbb2f; color:white; font-weight: normal;font-family: Fnt;" accept="image/*" capture="camera;" >
+            <span>Select Image</span>
+            <input id = 'sub' hidden type='submit'></input>
+
+            <input type="file" id='file' name="file"  onchange="$('form').hide();$('#logo').hide();$('#loading').show();$('#sub').click(); $('#myform').trigger('reset');" accept="image/*" multiple data-role="none" />
+            </div>
+        </form>
+		<div id='loading' style='padding-top:30%;' >
+        <img src="img/loading.gif" style="max-width: 45%;max-height: 45%; padding-left: 25%;"><div align='center' style="font-family: Fnt;">Processing...</div>
+		</div>
+    </div><!-- /content -->
+
+</div><!-- /page one -->
+</body>
+</html>

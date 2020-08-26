@@ -1,0 +1,25 @@
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin-right: 4px;
+  transition: all 1s;
+}
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  transform: translate(-300px, 0) scale(4);
+  font-size: 25px;
+  direction: ltr;
+  cursor: pointer;
+
+  
+}
+.fileinput-button:hover{
+
+transform: scale(1.2,1.2);
+}
